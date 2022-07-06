@@ -210,6 +210,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  text-align: center;
 }
 .ketrampilan-wrapper {
   display: flex;
@@ -346,7 +347,7 @@ footer{
 @media (max-width: 768px) {
   /* Start of Tentang */
   .container-tentang {
-    width: 100%;
+    width: 90%;
   }
   .tentang-wrapper-item {
     text-align: center;
@@ -410,6 +411,9 @@ footer{
     align-items: center;
     width: 95%;
   }
+  .card-img:hover{
+    transform: scale(1);
+  }
   .card {
     width: 90%;
     height: auto;
@@ -419,9 +423,7 @@ footer{
     height: 400px;
   }
   .card:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-    cursor: pointer;
+    transform: scale(0.9);
   }
   /* End of Ketrampilan */
 
@@ -438,7 +440,35 @@ footer{
     flex-direction: column;
     align-items: center;
   }
+  
   /* End of Kontak */
   /* End of of Gallery */
+}
+/* Iphone xs */
+@media(max-width:480px){
+  /* Start of Navbar */
+  .header nav{
+    padding: 20px 15px;
+  }
+  /* End of Navbar */
+  /* Start of Ketrampilan */
+  .ketrampilan-wrapper{
+    width:100%;
+    height: auto;
+  }
+  .card-img{
+    height: 300px;
+  }
+  /* End of Ketrampilan */
+  /* Start of gallery */
+  .galeri-wrapper{
+    width:95%;
+  }
+  /* End of gallery */
+  /* Start of tentang */
+  .t-3{
+    width:100%;
+  }
+  /* End of tentang */
 }
 /* ! END OF RESPOSIVE BREAK POINT */
